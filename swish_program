@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+   float percentage;
+   int x,p,sum=0,i,count=1;
+   scanf("%d",&x);
+   scanf("%d",&p);
+   i=x;
+   while(p>0)
+   {
+
+   percentage = (p/100)*x;
+x=x/10;
+sum=sum+percentage;
+count++;
+  
+}
+sum=sum+i;
+ printf("%d",sum);
+ printf(count);
+
+   return 0;
+}
